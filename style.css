@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition:0.4s;
+}
+:root{
+    --area-1-color:rgb(241, 241, 241)9;
+    /*--area-2-color:#DDDBD9;*/
+    --area-2-body-about-color:#f0f0f0;
+    --area-2-body-social-navbar-color:#DDDBD9;
+    
+    --footer-color:white;
+}
+
+.area-1-body a{
+    text-decoration: none !important;
+    color: black !important;
+}
+a:hover{
+}
+.area{
+    position: static;
+    float: left;
+    width: 100%;
+}
+
+.area-1{
+    
+    position: relative;
+    background-color: var(--area-1-color);
+    height: 30vh;
+    
+}
+.area-1-body{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    margin-right: 10px;
+    align-items: end;
+}
+.area-1-body-name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.navbar_{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.navbar-items{
+    margin: 15px;
+    align-items: center;
+    
+}
+.navbar a:hover{
+    border-bottom: 0.5px black solid;
+    padding-bottom: 5px;
+}
+
+
+.area-2{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--area-2-color);
+    height: 70vh;
+}
+.area-2-body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.area-2-body-about{
+    padding: 30px;
+    width: 85%;
+    background-color: var(--area-2-body-about-color)
+    
+}
+.area-2-body-social{
+    width: 15%;
+
+    background-color: var(--area-2-body-social-navbar-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.area-2-body-social-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--footer-color);
+}
+.footer p{
+       
+}
+#image{
+    padding-left: 30px;
+
+}
+
+
+@media screen and (max-width:600px){
+    .area-2-body{
+        flex-direction: column;
+        height: auto;
+    }
+    .area-2-body-about{
+        width: 100%;
+    }
+    .area-2-body-social{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .area-2-body-social .shadow-sm{
+        visibility: hidden;
+    }
+    .area-2-body-social-navbar{
+        flex-direction: row;
+        justify-content:space-around;
+        
+    }
+    .area-2-body-social-navbar a{
+        margin: 10px;
+    }
+}
